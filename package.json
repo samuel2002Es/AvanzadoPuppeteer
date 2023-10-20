@@ -1,0 +1,21 @@
+{
+  "name": "avanzadopuppeteer",
+  "version": "1.0.0",
+  "description": "curso avanzado de automatizacion de pruebas con Puppeteer",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --forceExit --detectOpenHandles",
+    "test-emolacion-de-dispositivos": "jest --forceExit --detectOpenHandles __test__/emulacionDeDispositivos.test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^3.0.3"
+  },
+  "dependencies": {
+    "jest": "^29.7.0",
+    "puppeteer": "^21.4.0",
+    "puppeteer-core": "^21.4.0"
+  }
+}
