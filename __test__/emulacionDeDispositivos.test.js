@@ -9,7 +9,7 @@ describe('Emulando dispositivos', () => {
         const context = await browser.createIncognitoBrowserContext()
         page = await context.newPage()
         await page.goto('https://platzi.com',{waitUntil: 'networkidle2'})
-        jest.setTimeout(80000);
+        //jest.setTimeout(80000);
     },80000);
     it('Emulando dispositivos de forma manual y obteniendo el texto', async () => {
         await page.emulate({
@@ -25,7 +25,7 @@ describe('Emulando dispositivos', () => {
         })
         const texto =await getText(page,'#cms-landings > section > section.Hero.Bg-animation > div > h1')
         console.log('Texto: ',texto);
-        await new Promise(r => setTimeout(r, 3000))
+        await new Promise(r => setTimeout(r, 1000))
 	});
     it('Emulando un sitio de escritorio y obtener el numero de imagenes', async () => {
         await page.setViewport({
